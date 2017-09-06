@@ -1,0 +1,16 @@
+.container
+	.row
+		.span12
+			.hero-unit.center
+				h1
+					| Page Not Found
+					|
+					font(face='Tahoma', color='red') Error 404
+				h3
+					| The page you requested could not be found, either contact your webmaster or try again. Use your browsers
+					b  Back
+					|  button to navigate to the page you have prevously come from
+				h3 Or you could just press this neat little button:
+				a.btn.btn-large.btn-info([routerLink]="['/']")
+					i.icon-home.icon-white
+					|  Take Me Home

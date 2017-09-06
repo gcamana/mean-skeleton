@@ -1,0 +1,55 @@
+{
+	"editor.renderIndentGuides": true,
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"client/**/*.html": true
+	},
+	"search.exclude": {
+		"**/.git": true,
+		"**/node_modules": true,
+		"**/tmp": true,
+		".tmp": true,
+		"www": true,
+		"**/dist": true
+	},
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.referencesCodeLens.enabled": false,
+	"todohighlight.include": "{**/*.ts,**/*.scss,**/*.pug}",
+	"todohighlight.exclude": "{**/node_modules/**,**/dist/**}",
+	"todohighlight.keywords": [
+		{
+			"text": "TODO:",
+			"color": "#000"
+		},
+		{
+			"text": "BUG:",
+			"color": "yellow",
+			"backgroundColor": "#f00",
+			"overviewRulerColor": "#f00"
+		},
+		{
+			"text": "NOTE:",
+			"color": "#000",
+			"backgroundColor": "#fff",
+			"overviewRulerColor": "#fff"
+		},
+		{
+			"text": "TEST:",
+			"color": "#0f0",
+			"backgroundColor": "#888",
+			"overviewRulerColor": "#333"
+		},
+		{
+			"text": "HACK:",
+			"color": "#000",
+			"backgroundColor": "#0f0",
+			"overviewRulerColor": "#0f0"
+		},
+		{
+			"text": "REVIEW:",
+			"color": "#fff",
+			"backgroundColor": "#00f",
+			"overviewRulerColor": "#00f"
+		}
+	]
+}

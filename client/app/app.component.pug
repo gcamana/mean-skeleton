@@ -1,0 +1,10 @@
+nav.navbar.navbar-default
+	.container-fluid
+		a.navbar-brand {{pageTitle}}
+		ul.nav.navbar-nav
+			li
+				a([routerLink]="['/']") Home
+			li
+				a([routerLink]="['/account-list']") Account List
+.container
+	//- router-outlet

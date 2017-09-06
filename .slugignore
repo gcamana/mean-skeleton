@@ -1,0 +1,5 @@
+server/
+client/
+build/
+.vscode/
+.config/

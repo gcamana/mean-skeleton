@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "cs-labs";
+	src: url('../assets/fonts/cs-labs-icons/cs-labs.eot');
+	src: url('../assets/fonts/cs-labs-icons/cs-labs.eot?#iefix') format('eot'),
+		url('../assets/fonts/cs-labs-icons/cs-labs.woff2') format('woff2'),
+		url('../assets/fonts/cs-labs-icons/cs-labs.woff') format('woff'),
+		url('../assets/fonts/cs-labs-icons/cs-labs.ttf') format('truetype'),
+		url('../assets/fonts/cs-labs-icons/cs-labs.svg#cs-labs') format('svg');
+}
+
+.cs-labs:before {
+	font-family: "cs-labs";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.cs-labs-align-center:before {
+	content: "\E001";
+}
+
+.cs-labs-align-justify:before {
+	content: "\E002";
+}
+
+.cs-labs-align-left:before {
+	content: "\E003";
+}
+
+.cs-labs-align-right:before {
+	content: "\E004";
+}

@@ -1,4 +1,4 @@
-# MEAN Template
+# MEAN Skeleton
 Template with:
 #### Client
 	* Angular 4

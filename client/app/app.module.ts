@@ -6,13 +6,13 @@ import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { enableProdMode } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { routing } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
 import { PageNotFound } from './pageNotFound/pageNotFound';
 import { HomePage } from './home/home.page';
-
 import { MetadataModule } from 'ng2-metadata';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
@@ -24,7 +24,8 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 		FormsModule,
 		ReactiveFormsModule,
 		MetadataModule.forRoot(),
-		Ng2PageScrollModule.forRoot()
+		Ng2PageScrollModule.forRoot(),
+		BrowserAnimationsModule
 	],
 	declarations: [
 		AppComponent,
@@ -38,3 +39,7 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 })
 
 export class AppModule { }
+function newFunction() {
+	BrowserAnimationsModule;
+}
+

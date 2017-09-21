@@ -1,7 +1,7 @@
 import * as express from 'express';
 
-import { DogRoutes } from './dog.route';
-import { UserRoutes } from './user.route';
+import { DogRoutes } from './DogRoutes';
+import { UserRoutes } from './UserRoutes';
 
 let app = express();
 

@@ -21,6 +21,7 @@
     "start": "concurrently  \"tsc -p server -w\" \"npm run pug-it:w\" \"webpack --env=dev --watch --colors --config build/webpack.config.js\" \"node dist/server/server.js\""
   },
   "dependencies": {
+    "@angular/animations": "4.3.5",
     "@angular/common": "4.3.5",
     "@angular/compiler": "4.3.5",
     "@angular/core": "4.3.5",
@@ -54,6 +55,7 @@
     "@types/morgan": "^1.7.32",
     "@types/node": "8.0.24",
     "angular2-template-loader": "0.6.2",
+    "animejs": "^2.0.2",
     "awesome-typescript-loader": "3.2.2",
     "bootstrap": "^4.0.0-alpha.6",
     "bootstrap-loader": "2.2.0",

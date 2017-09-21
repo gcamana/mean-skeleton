@@ -1,10 +1,11 @@
 import { Router } from '@angular/router';
 import { Component } from "@angular/core";
 import { MetadataService } from 'ng2-metadata';
+
 require('./app.component.scss');
 
 @Component({
-	selector: 'mean-skeleton',
+	selector: 'md-app',
 	template: '<router-outlet><router-outlet>',
 })
 export class AppComponent {

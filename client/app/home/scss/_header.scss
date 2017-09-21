@@ -1,0 +1,109 @@
+@import '../../variables';
+
+/* ==========================================================================
+	 Nav Styles
+	 ========================================================================== */
+
+.navbar {
+	min-height: 70px;
+}
+
+.navbar-brand {
+	padding: 10px 25px;
+}
+
+.navbar-default {
+	background-color: $secondary;
+	border-color: $secondary;
+	position: fixed;
+	width: 100%;
+	.csMixtura {
+		fill: $light;
+	}
+	.navbar-nav {
+		>.active {
+			>a {
+				background-color: $purple;
+			}
+		}
+		>.open {
+			>a {
+				background-color: $purple;
+				color: $light;
+				opacity: .8;
+				&:hover,
+				&:focus {
+					background-color: $purple;
+					color: $light;
+					opacity: 1;
+				}
+			}
+		}
+		>li {
+			>a {
+				color: $light;
+				opacity: .8;
+				&:hover,
+				&:focus {
+					color: $light;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&.light-color {
+		background-color: $light;
+		border-color: $muted;
+		position: fixed;
+		width: 100%;
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+		.csMixtura {
+			fill: $primary;
+		}
+		.navbar-nav {
+			>.active {
+				>a {
+					background-color: $muted;
+				}
+			}
+			>.open {
+				>a {
+					background-color: $muted;
+					color: $shadow;
+					opacity: .8;
+					&:hover,
+					&:focus {
+						background-color: transparent;
+						color: $shadow;
+						opacity: 1;
+					}
+				}
+			}
+			>li {
+				>a {
+					color: $shadow;
+					opacity: .8;
+					&:hover,
+					&:focus {
+						color: $shadow;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 0;
+	}
+	.navbar-nav {
+		>li {
+			>a {
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+		}
+	}
+}

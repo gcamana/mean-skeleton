@@ -1,7 +1,35 @@
+@import "../variables";
 home-page {
 	@import './scss/main';
 	@import './scss/global';
-	@import './scss/navBar';
+	@import './scss/header';
 	@import './scss/form';
 	@import './scss/mobile';
+	@import './scss/b1';
+	.content--intro {
+		z-index: 0;
+		height: 200vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.shape {
+		height: 100vh;
+		width: 100%;
+		display: block;
+		fill: $secondary;
+	}
+	.content__inner {
+		background-color: $secondary;
+		height: 90vh;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 }

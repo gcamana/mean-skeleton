@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as path from 'path';
 
-import { AllRoutes } from './1.routes/all.routes';
+import { AllRoutes } from './1.routes/AllRoutes';
 
 export class Routing {
 

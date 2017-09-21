@@ -1,0 +1,23 @@
+@import '../../variables';
+.b1{
+    @include transition-all();
+    transition-delay: 1.5ms;
+}
+.md-container__inner{
+    display: inline-flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    @include transition-all();
+}
+.md-centered{
+    text-align: center;
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        color: $light;
+    }
+}

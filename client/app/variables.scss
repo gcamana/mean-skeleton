@@ -34,14 +34,15 @@ $color-next-hover: #000;
 	 Medidas and Fonts
 ========================================================================== */
 
-$font-alt: 400 6vw/1 'Fugaz One', serif;
+$font-alt: 400 6vw/1 'Fugaz One',
+serif;
 $wancho: calc(1100px - 15px);
 $width:calc(94% - 15px);
-
-.container-fluid{
+.container-fluid {
 	width: $width;
 	max-width: $wancho;
 }
+
 
 /* ==========================================================================
 	 Mixins
@@ -68,6 +69,12 @@ $width:calc(94% - 15px);
 
 @mixin transition-all() {
 	transition: all 0.25s;
+}
+
+@mixin image-responsive() {
+	width: 100%;
+	display: block;
+	height: auto;
 }
 
 

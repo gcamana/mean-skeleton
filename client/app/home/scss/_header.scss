@@ -17,6 +17,7 @@
 	border-color: $secondary;
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 	.csMixtura {
 		fill: $light;
 	}

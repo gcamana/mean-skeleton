@@ -7,15 +7,14 @@ import {
 	transition,
 	animate
 } from "@angular/core";
-
+import { CommonService } from './../common/common.service';
 import * as anime from 'animejs';
 
 require('./home.page.scss');
 
-// let LOGO = require('./../../assets/img/home/logo.svg');
-// let PRESS01 = require('./../../assets/img/home/press-01.jpg');
-// let PRESS02 = require('./../../assets/img/home/press-02.jpg');
-// let IPHONE = require('./../../assets/img/home/iphone.png');
+let UNKNOW_BG = require('./../../assets/img/home/UNKNOW_BG.jpg');
+let PLAY_STORE = require('./../../assets/img/home/google_play_dark.png');
+let APPLE_STORE = require('./../../assets/img/home/apple_store_dark.png');
 
 @Component({
 	selector: 'home-page',
@@ -33,19 +32,19 @@ require('./home.page.scss');
 	]
 })
 export class HomePage {
-	// logo = LOGO;
-	// press01 = PRESS01;
-	// press02 = PRESS02;
-	// iphone = IPHONE;
+	UNKNOW_BG: string = UNKNOW_BG;
+	PLAY_STORE: string = PLAY_STORE;
+	APPLE_STORE: string = APPLE_STORE;
 	state: string;
-
 	loaded;
 	isActive: boolean;
 	enterTimeout: any;
 	DOM = {};
+	pictureRandom: string = "https://unsplash.it/1024/600/?random";
 
 	constructor(
-		private _renderer: Renderer
+		private _renderer: Renderer,
+		private _commonSrv: CommonService
 	) {
 		this.onAnimate();
 	}
@@ -107,7 +106,7 @@ export class HomePage {
 	headerOut() {
 		anime({
 			targets: this.DOM["header"],
-			duration: 400,
+			duration: 100,
 			easing: 'easeInOutSine',
 			translateY: '-80px'
 		})
@@ -116,7 +115,7 @@ export class HomePage {
 	headerIn() {
 		anime({
 			targets: this.DOM["header"],
-			duration: 400,
+			duration: 100,
 			easing: 'easeInOutSine',
 			translateY: '0px'
 		})
@@ -141,5 +140,8 @@ export class HomePage {
 		});
 	}
 
+	bgStyle() {
+		return this._commonSrv.setBackgrounStyle(this.pictureRandom || this.UNKNOW_BG);
+	}
 }
 

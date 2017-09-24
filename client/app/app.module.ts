@@ -16,6 +16,8 @@ import { HomePage } from './home/home.page';
 import { MetadataModule } from 'ng2-metadata';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
+import { CommonService } from './common/common.service';
+
 @NgModule({
 	imports: [
 		BrowserModule,
@@ -34,6 +36,7 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 		HomePage
 	],
 	providers: [
+		CommonService
 	],
 	bootstrap: [AppComponent]
 })

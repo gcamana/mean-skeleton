@@ -48,10 +48,20 @@ nav.navbar.navbar-default.secundary-color
 							a(href='#') Separated link
 
 section.b1
+	.b1-background-random([ngStyle]="bgStyle()")
 	.container-fluid
 		.md-container__inner
 			.md-centered
-				p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, est.
+				.b1-paraghap
+					p Cambia la forma de pedir las canciones cuando  estás con tus amigos
+						span en un bar, en tu casa, oficina o en cualquier otro lugar.
+
 				.row
-					.col-md-6
-					.col-md-6
+					.b1-col-md-6.g-right
+						a.b1-image.center(href="")
+							img([src]="APPLE_STORE")
+
+					.b1-col-md-6.g-left
+						a.b1-image(href="")
+							img([src]="PLAY_STORE")
+
